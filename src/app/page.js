@@ -50,15 +50,35 @@ export default function Home() {
     setTasks(updatedTasks);
   };
 
-  // sort 
+  // sort by priority and completed
   const sortedTasks = [...tasks].sort((a, b) => {
-    if (a.completed === b.completed) {
-      
-      return 0;
+    const priorityOrder = {
+      high: 3,
+      medium: 2,
+      low: 1
+    };
+  
+    if (a.completed && !b.completed) {
+      return 1;    
+    } else if (!a.completed && b.completed) {
+      return -1; 
+    } else {
+      if (priorityOrder[a.priority] > priorityOrder[b.priority]) {
+        return -1; 
+      } else if (priorityOrder[a.priority] < priorityOrder[b.priority]) {
+        return 1; 
+      } else {
+        return 0; 
+      }
     }
-   
-    return a.completed ? 1 : -1;
   });
+  
+  
+
+  // total tasks
+  const totalTasks = tasks.length;
+  const completedTasks = tasks.filter(task => task.completed).length;
+
 
   return (
     <div className="max-w-[1440px] mx-auto">
@@ -71,9 +91,6 @@ export default function Home() {
       {/* Task Cards */}
       <div className="flex justify-between ml-3 mr-5 md:ml-10 md:mr-20">
         <h1 className="text-xl font-serif  font-bold">Task List: </h1>
-        <div>
-          <p>Sort</p>
-        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 md:mx-10">
         {sortedTasks.map((task) => (
@@ -85,6 +102,9 @@ export default function Home() {
             onMarkComplete={onMarkComplete}
           />
         ))}
+      </div>
+      <div>
+        <p className="text-center text-lg font-semibold font-serif mt-10">Total Tasks: {totalTasks}, Completed Tasks: {completedTasks}</p>
       </div>
     </div>
   );

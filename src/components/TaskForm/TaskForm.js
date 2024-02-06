@@ -30,8 +30,8 @@ const TaskForm = ({ onAddTask }) => {
     };
 
     onAddTask(newTask);
+    e.target.reset();
      document.getElementById("add-task-modal").close()
-    // e.target.reset();
 
   };
 

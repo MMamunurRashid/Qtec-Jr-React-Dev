@@ -4,6 +4,7 @@ const Task = ({ task, onUpdateTask, onDeleteTask, onMarkComplete }) => {
   const [editedTask, setEditedTask] = useState(task);
   const [isEditing, setIsEditing] = useState(false);
 
+  
   const handleEdit = () => {
     setIsEditing(true);
   };
@@ -20,6 +21,7 @@ const Task = ({ task, onUpdateTask, onDeleteTask, onMarkComplete }) => {
       [name]: value,
     });
   };
+  
   const handleDelete = () => {
     onDeleteTask(task.id);
   };
