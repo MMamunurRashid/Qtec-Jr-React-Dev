@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to Your Daily Todo List 📝
+This is ToDo List app is for Qtec Junior Reactjs Developer Job Task.
 
-## Getting Started
+Live Link [https://qtec-jr-react-dev.vercel.app/](https://qtec-jr-react-dev.vercel.app/)  browser to see the result.
 
-First, run the development server:
+## Feature: 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This delightful website is designed to help you manage your daily tasks effortlessly. Whether it's jotting down your to-dos, updating their status, or deleting completed tasks, this intuitive platform has got you covered.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Experience Seamless Task Management
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Adding a New Task
+Begin your productive journey by clicking the enticing "Add a New Task" button. Watch as a modal gracefully emerges, inviting you to pour your thoughts into the digital canvas.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Saving Your Task
+Once you've poured your heart out into the task input fields, seal your commitment by clicking the "Add Task" button. Your task will seamlessly join the ranks of your daily agenda.
 
-## Learn More
+### Sorting with Precision
+No more messy lists! Your tasks are meticulously sorted based on priority, with high-priority tasks taking precedence over medium and low-priority ones. Completed tasks are gracefully tucked away at the end, ensuring a clutter-free view.
 
-To learn more about Next.js, take a look at the following resources:
+### Vibrant Task Cards
+Each task card radiates its own aura, reflecting its priority level:
+- **High Priority**: Bold and assertive with a striking red background.
+- **Medium Priority**: Calm and collected with a soothing yellow hue.
+- **Low Priority**: Refreshing and light with a tranquil cyan tone.
+- **Completed Task**: Radiant and serene in a lush green glow.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Empowering Task Actions
+Take charge of your tasks with the click of a button:
+- **Edit**: Seamlessly update your task details within a sleek modal interface.
+- **Delete**: Bid farewell to completed tasks or those no longer relevant to your journey.
+- **Mark Complete**: Celebrate your victories by marking tasks as complete, ushering them into a tranquil green realm.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Enlightening Task Counters
+Stay informed and motivated with real-time task statistics:
+- **Total Tasks**: Keep track of your entire workload.
+- **Completed Tasks**: Revel in your accomplishments as you witness completed tasks pile up.
 
-## Deploy on Vercel
+## Embrace Modern Technology
+Harness the power of cutting-edge technologies to streamline your task management journey:
+- **Next.js**: For lightning-fast performance and effortless navigation.
+- **Tailwind CSS**: Crafting visually stunning user interfaces with ease.
+- **daisyUI**: Elevating your design game with a touch of elegance.
+- **Local Storage**: Safeguarding your precious task data for seamless access and continuity.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ready to embark on your journey to productivity? Dive in and let your tasks flourish in this nurturing digital sanctuary.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
